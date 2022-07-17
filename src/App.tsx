@@ -1,9 +1,11 @@
 import React from 'react';
+import Select from './components/Select/Select';
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
 
 function App() {
   return (
     <div className="App">
-      Shopping cart
+      <ShoppingCart/>
     </div>
   );
 }
