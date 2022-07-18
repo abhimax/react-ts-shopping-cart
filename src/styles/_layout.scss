@@ -1,19 +1,61 @@
 @import "../styles/variables.scss";
+
 body {
-  margin: 0;
-  font-family: var(--font-family-primary);
+    margin: 0;
+    font-family: var(--font-family-primary);
+    color: var(--color-text-black);
 }
-.cart-wrapper{
-    .section-title{
+
+.cart-wrapper {
+    width: 780px;
+    border-radius: var(--border-radius-primary);
+    box-shadow: var(--box-shadow-primary);
+    margin: 50px;
+
+    .section-title {
         font-size: 1.5rem;
         font-weight: 500;
         margin-left: 40px;
+        padding-top: 20px;
     }
-    .add-item-wrapper{
+
+    .add-item-wrapper {
         display: flex;
-        padding: 10px 40px;
-        .form-input,.form-select{
+        padding: 20px 40px;
+
+        .form-input,
+        .form-select {
             margin-right: 10px;
         }
+    }
+
+    .item-wrapper {
+        display: flex;
+        height: 40px;
+        align-items: center;
+
+        .item-name {
+            flex-basis: 300px;
+            display: -webkit-box;
+            padding-left: 40px;
+        }
+
+        .shop-name {
+            flex-basis: 270px;
+            display: -webkit-box;
+            padding-left: 20px;
+        }
+
+        .item-action {
+            flex:1;
+            padding-left: 30px;
+            .list-button{
+                cursor: pointer;
+                color: var(--red);
+            }
+        }
+        &:nth-child(odd) {
+            background-color: var(--grey-light);
+         }
     }
 }

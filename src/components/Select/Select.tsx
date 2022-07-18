@@ -1,29 +1,23 @@
 import { FC } from "react";
 import React, { useState } from "react";
 import { ISelectProps } from "./Select.d";
-import { IItem } from "../../models/IItem";
 
-interface IStates {
-    itemList: IItem[];
-}
-
-const Select: FC<IStates> = ({itemList}) => {
+const Select: FC<ISelectProps> = ({itemList}) => {
   const [selectedOption, setSelectedOption] = useState<String>();
   const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
     setSelectedOption(value);
   };
-  {
-  }
+
   return (
     <div>
       <select 
         onChange={selectChange}
-        defaultValue="Select shop"
-        className="form-select"
+        defaultValue={'DEFAULT'}
+        className="form-select custom-arrow"
         >
-        <option selected disabled>
-          Choose one
+        <option value="DEFAULT" disabled>
+          Select shop
         </option>
         {itemList.map((item, key) => {
           return (
