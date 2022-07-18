@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+}
+.cart-wrapper{
+    .section-title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+    .add-item-wrapper{
+        display: flex;
+        padding: 10px 40px;
+        .form-input,.form-select{
+            margin-right: 10px;
+        }
+    }
+}

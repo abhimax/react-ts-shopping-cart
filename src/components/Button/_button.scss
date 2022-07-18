@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+.form-button {
+    background: var(--color-primary);
+    border-radius: 40px;
+    border:none;
+    color: var(--white);
+    cursor: pointer;
+    padding: 14px 30px;
+}

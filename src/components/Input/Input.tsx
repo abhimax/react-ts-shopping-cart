@@ -6,7 +6,7 @@ const Input: FC<IInputProps> = ({value, name, placeholder, type, onChange, ...re
     type={type}
     value={value}
     name={name}
-    className="form-control"
+    className="form-input"
     placeholder={placeholder}
     onChange={onChange}
     {...rest}

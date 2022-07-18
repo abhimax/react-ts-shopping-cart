@@ -17,7 +17,11 @@ const Select: FC<IStates> = ({itemList}) => {
   }
   return (
     <div>
-      <select onChange={selectChange} defaultValue="Select shop">
+      <select 
+        onChange={selectChange}
+        defaultValue="Select shop"
+        className="form-select"
+        >
         <option selected disabled>
           Choose one
         </option>

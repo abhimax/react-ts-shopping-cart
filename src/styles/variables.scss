@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Work+Sans:wght@400;500&display=swap');
+:root {
+    /* colors */
+    --black: #273348;
+    --white: #ffffff;
+    --green: #2DD08C;
+    --red: #F54436;
+    --grey-light: #FBFBFB;
+    --grey: #ECEDEE;
+    --grey-medium: #9298A2;
+
+
+    /* Theme Variables */
+    --color-primary: var(--green);
+    --color-text-black: var(--black);
+    --font-family-primary: 'Work Sans', sans-serif;
+    --border-primary: 2px solid var(--grey);
+    --box-shadow-primary: 0px 4px 20px var(--grey);
+    --border-radius-primary: 10px;
+
+    /* z-index layers */
+    --z-level-hidden: -1;
+    --z-level-0: 0;
+    --z-level-1: 1;
+    --z-level-2: 2;
+}
