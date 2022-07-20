@@ -5,4 +5,4 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     onClick: () => void;
 }
 
-export { IButtonProps }
+export { IButtonProps };

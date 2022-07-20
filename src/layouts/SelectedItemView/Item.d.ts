@@ -1,6 +1,6 @@
-interface IItemProps{
+interface IItemProps {
+    id: string;
     name: string;
     shop: string;
-    onClick: () => void;
 }
-export {IItemProps};
+export { IItemProps };

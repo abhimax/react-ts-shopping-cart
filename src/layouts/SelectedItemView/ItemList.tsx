@@ -1,15 +1,30 @@
 import { FC } from "react";
 import Item from "./Item";
+import store from "../../store/index";
+import { IItemProps } from "./Item.d";
+import { useSelector } from "react-redux";
 
+type RootState = ReturnType<typeof store.getState>;
 
 const ListItem: FC = () => {
-  return (
+    const products = useSelector<RootState, IItemProps[]>(
+        (state) => state.product.products
+    );
+
+    return (
         <div className="item-list-wrapper">
-            <Item name="name1" shop="shop1" onClick={()=>{console.log("Clicked!")}}/>
-            <Item name="name2" shop="shop2" onClick={()=>{console.log("Clicked!")}}/>
-            <Item name="name2" shop="shop2" onClick={()=>{console.log("Clicked!")}}/>
+            {products.length
+                ? products.map((el) => (
+                      <Item
+                          key={el.id}
+                          id={el.id}
+                          name={el.name}
+                          shop={el.shop}
+                      />
+                  ))
+                : ""}
         </div>
-  );
+    );
 };
 
 export default ListItem;
