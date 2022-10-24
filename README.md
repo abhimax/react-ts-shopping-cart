@@ -1,3 +1,23 @@
+#  Shopping Cart
+
+## Tech Stack
++ React with Type Script
++ React Redux
++ SCSS
+
+## Shopping Cart features.
++ Add Product in to the cart
++ delete added Product from the cart
++ Avoid adding duplicated Products to the cart in the same store
+
+## Home Screen
+![EXPENSETRACKER!](readme-res/shopping-cart-screen-1.png)
+
+## Added items
+![EXPENSETRACKER2!](readme-res/shopping-cart-screen-2.png)
+
+## Added items error
+![EXPENSETRACKER2!](readme-res/shopping-cart-screen-3.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
